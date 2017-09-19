@@ -1,0 +1,8 @@
+<launch>
+
+  <include file="$(find youbot_moveit_config)/launch/demo.launch"/>
+
+  <node name="youbot_move_group_tests" pkg="youbot_move_group_tests" type="youbot_move_group_tests" respawn="false" output="screen">
+  </node>
+
+</launch>

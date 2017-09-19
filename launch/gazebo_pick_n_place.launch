@@ -1,0 +1,8 @@
+<launch>
+
+  <include file="$(find youbot_moveit_config)/launch/youbot_moveit_gazebo.launch"/>
+
+  <node name="youbot_pick_n_place" pkg="youbot_move_group_tests" type="youbot_pick_n_place" respawn="false" output="screen">
+  </node>
+
+</launch>
